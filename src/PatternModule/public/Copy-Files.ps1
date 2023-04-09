@@ -1,5 +1,5 @@
 using module ..\private\Job.psm1
-using module ..\private\Copy.psm1
+using module ..\private\LocalFileCopy.psm1
 
 # https://www.automatedops.com/blog/2018/04/11/software-design-patterns-in-powershell-strategy-pattern/
 
@@ -16,7 +16,7 @@ function Copy-Files {
 
     process {
         [Job]::New($Path, $Output).
-            AddStage([Copy]::New()).
+            AddStage([LocalFileCopy]::New()).
             Invoke().
             GetResult()
     }

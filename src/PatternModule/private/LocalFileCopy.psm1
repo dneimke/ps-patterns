@@ -1,9 +1,9 @@
 using module .\Stage.psm1
 using module .\Job.psm1
 
-class Copy : Stage {
+class LocalFileCopy : Stage {
 
-    Copy () : base('Copy') { }
+    LocalFileCopy () : base('LocalFileCopy') { }
 
     Invoke([Job]$J) {
         $J.LogHeader($this.GetHeader())
@@ -11,4 +11,4 @@ class Copy : Stage {
     }
 }
 
-Export-ModuleMember -Function "Copy"
+Export-ModuleMember -Function "LocalFileCopy"
