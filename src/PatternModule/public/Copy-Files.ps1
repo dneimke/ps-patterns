@@ -12,7 +12,7 @@ function Copy-Files {
         [string] $Output
     )
 
-    Process {
+    process {
         [Job]::New($Path, $Output).
             AddStage([Copy]::New()).
             Invoke().
