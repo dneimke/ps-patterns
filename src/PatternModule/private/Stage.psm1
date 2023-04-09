@@ -1,5 +1,3 @@
-# https://www.automatedops.com/blog/2018/04/11/software-design-patterns-in-powershell-strategy-pattern/
-
 class Stage {
 
     [string] $Name
