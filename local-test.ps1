@@ -1,3 +1,5 @@
+# https://pester.dev/docs/introduction/installation
+
 if(-not (Get-Module -Name Pester -ListAvailable)) {
     Install-Module Pester -Scope CurrentUser -Force -SkipPublisherCheck
 }
