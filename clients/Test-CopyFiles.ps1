@@ -1,4 +1,4 @@
-Import-Module "C:\repos\GitHub\ps-patterns\src\PatternModule" -Force
+Import-Module "..\src\PatternModule" -Force
 
 $Path = "\temp\in"
 $Output = "\temp\out"
