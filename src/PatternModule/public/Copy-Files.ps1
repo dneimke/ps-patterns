@@ -8,7 +8,9 @@ function Copy-Files {
     [CmdletBinding()]
     [OutputType([void])]
     param (
+        [Parameter(Position=0)]
         [string] $Path,
+        [Parameter(Position=1)]
         [string] $Output
     )
 
