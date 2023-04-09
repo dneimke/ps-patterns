@@ -32,7 +32,9 @@ cross-cutting concerns:
 ```
 
 
-## Consume module
+## Consuming the module
+
+The repo contains a simple example of consuming the module locally as shown in the following code snippet.
 
 ```pwsh
 # \clients\Test-CopyFiles.ps1
@@ -45,6 +47,10 @@ Copy-Files $Path $Output
 ```
 
 ![image](https://user-images.githubusercontent.com/720792/230800542-6c479d32-5afc-4d45-b195-b727173c59cf.png)
+
+Modules are a great way to package and distribute code. As an example, you could develop and package common
+code in a module and deploy to servers. These modules could then be consumed via runbooks or other tools to
+provide a standard way to run tested PowerShell scripts.
 
 ## Pester tests
 
