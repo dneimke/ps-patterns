@@ -1,6 +1,6 @@
 Import-Module "..\src\PatternModule" -Force
 
-$Path = "\temp\in"
-$Output = "\temp\out"
+$Source = "\temp\in"
+$Destination = "\temp\out"
 
-Copy-Files $Path $Output
+Copy-Files $Source $Destination

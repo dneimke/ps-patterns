@@ -7,13 +7,13 @@ function Copy-Files {
     [OutputType([void])]
     param (
         [Parameter(Position=0)]
-        [string] $Path,
+        [string] $Source,
         [Parameter(Position=1)]
-        [string] $Output
+        [string] $Destination
     )
 
     process {
-        [Job]::New($Path, $Output).
+        [Job]::New($Source, $Destination).
             AddStage([LocalFileCopy]::New()).
             Invoke().
             GetResult()

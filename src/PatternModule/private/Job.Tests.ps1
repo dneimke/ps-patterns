@@ -1,4 +1,4 @@
-using module .\Job.psm1
+# using module .\Job.psm1
 # tests generated using https://github.com/Stephanevg/PSClassUtils
 
 InModuleScope -ModuleName Job -ScriptBlock {
